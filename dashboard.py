@@ -1,6 +1,8 @@
+
 import streamlit as st
-from validators import ScriptValidator
-from emotional_nlp import EmotionalAnalyzer
+
+from creativectl.validators import ScriptValidator
+from creativectl.emotional_nlp import EmotionalAnalyzer
 
 st.title("Creative Infrastructure Dashboard")
 

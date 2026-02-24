@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creativectl"
+version = "0.1.0"
+description = "Structural validation and NLP-enhanced analysis system for cinematic script governance."
+authors = [
+  { name="Hemanta Roy" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "spacy",
+    "streamlit"
+]
+
+[project.scripts]
+creativectl = "creativectl.main:main"

@@ -6,15 +6,7 @@ class EmotionalAnalyzer:
     @classmethod
 def get_model(cls):
     if cls._nlp is None:
-        try:
-            cls._nlp = spacy.load("en_core_web_sm")
-        except OSError:
-            import subprocess
-            subprocess.run(
-                ["python", "-m", "spacy", "download", "en_core_web_sm"],
-                check=True
-            )
-            cls._nlp = spacy.load("en_core_web_sm")
+        cls._nlp = spacy.load("en_core_web_sm")
     return cls._nlp
 
     def __init__(self, script_text):

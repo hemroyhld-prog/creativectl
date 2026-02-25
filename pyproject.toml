@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "creativectl"
-version = "0.2.0"
+__version__ = "0.2.0"
 description = "Structural validation and NLP-enhanced analysis system for cinematic script governance."
 authors = [
   { name="Hemanta Roy" }
